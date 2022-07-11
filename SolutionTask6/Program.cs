@@ -20,6 +20,5 @@ if(num1 != null && num2 != null && num3 != null)
     {
         maxNumber=inputNumberThree;
     }
-    Console.Write("Mаксимальное число - ");
-    Console.Write(maxNumber);
+    Console.Write($"Максимальное число  {maxNumber}");
 } 
