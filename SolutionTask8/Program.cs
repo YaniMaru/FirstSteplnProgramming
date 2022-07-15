@@ -1,24 +1,24 @@
 ﻿//Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 Console.WriteLine("Введите число: ");
 string? inputLkOne = Console.ReadLine();
-if(inputLkOne != null)
+if (inputLkOne != null)
 {
-int inputNumber = int.Parse(inputLkOne);
-string line = "";
-int x = 2;
-if (inputNumber > 1)
-{
-while (x <= inputNumber-2)
-{
-line = line + x + ", ";
-x = x + 2;
-}
-if(x <= inputNumber)
-{
-line = line + x;
-}
-Console.WriteLine(line);
-}
+    int inputNumber = int.Parse(inputLkOne);
+    string line = "";
+    int x = 2;
+    if (inputNumber > 1)
+    {
+        while (x <= inputNumber - 2)
+        {
+            line = line + x + ", ";
+            x = x + 2;
+        }
+        if (x <= inputNumber)
+        {
+            line = line + x;
+        }
+        Console.WriteLine(line);
+    }
 }
 
 
@@ -34,7 +34,7 @@ Console.WriteLine(line);
 
 //     string line = "";
 //     int x = 2;
-    
+
 //     if (inputNumber > 1)
 //     {
 //         while (x < inputNumber)
@@ -46,7 +46,7 @@ Console.WriteLine(line);
 //         {
 //             line = line + inputNumber;
 //         }
-        
+
 //         Console.WriteLine(line);
 
 //     }
