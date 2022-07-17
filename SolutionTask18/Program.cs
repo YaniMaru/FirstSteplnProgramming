@@ -1,0 +1,22 @@
+﻿// Программа, которая по заданному номеру четверти, показывает диапазон возможных
+// координат точек в этой четверти (x и y)
+
+
+void printAnsver(int number)
+{
+    if (number == 1) Console.WriteLine("Допустимо: x>0, y>0");
+
+    if (number == 2) Console.WriteLine("Допустимо: x<0, y>0");
+
+    if (number == 3) Console.WriteLine("Допустимо: x<0, y<0");
+
+    if (number == 4) Console.WriteLine("Допустимо: x>0, y<0");
+}
+
+string? inputLine = Console.ReadLine();
+
+if (inputLine != null)
+{
+    int inputNumber = int.Parse(inputLine);
+    printAnsver(inputNumber);
+}
