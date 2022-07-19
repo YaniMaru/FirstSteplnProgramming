@@ -1,4 +1,6 @@
 ﻿// Программа, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+Console.Clear();
 int coordXPointA;
 int coordYPointA;
 int coordXPointB;
@@ -33,7 +35,8 @@ void readDataOfPoint()
 // Вычисляет расстояние между точками А и В
 void conculateLengtAB()
 {
-    lengthAB = Math.Sqrt(Math.Pow((coordXPointA - coordXPointB), 2) + Math.Pow((coordYPointA - coordYPointB), 2)+ Math.Pow((coordZPointA - coordZPointB), 2));
+    lengthAB = Math.Sqrt(Math.Pow((coordXPointA - coordXPointB), 2) + Math.Pow((coordYPointA - coordYPointB), 2) + Math.Pow((coordZPointA - coordZPointB), 2));
+    lengthAB = Math.Round(lengthAB, 2);
 }
 
 readDataOfPoint();
