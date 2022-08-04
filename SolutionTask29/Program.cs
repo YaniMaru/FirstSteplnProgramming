@@ -10,10 +10,10 @@ void VariantOne()
     Console.Write("[");
     while (i < 8 - 1)
     {
-        Console.Write(numberSintesator.Next(0, 2) + ",");
+        Console.Write(numberSintesator.Next(0, 10) + ",");
         i++;
     }
-    Console.Write(numberSintesator.Next(0, 2));
+    Console.Write(numberSintesator.Next(0, 10));
     Console.WriteLine("]");
 }
 //Option with an array of a given number of elements

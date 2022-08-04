@@ -36,4 +36,4 @@ void Print(int calculate, int calculate2)
 }
 
 Read();
-Print(Calculate( numberA, numberB), Calculate2( numberA, numberB));
+Print(Calculate(numberA, numberB), Calculate2(numberA, numberB));
