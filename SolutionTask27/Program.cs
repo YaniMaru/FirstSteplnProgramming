@@ -20,7 +20,4 @@ int Calculate()
     return sumOfDigits;
 }
 
-int result = Calculate();
-Console.WriteLine("Сумма цифр в числе: " + result);
-
-
+Console.WriteLine("Сумма цифр в числе: " + Calculate());

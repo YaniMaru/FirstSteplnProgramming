@@ -5,7 +5,6 @@
 
 int numberA;
 int numberB;
-int result;
 // Method for reading data from the console
 void Read()
 {
@@ -15,32 +14,26 @@ void Read()
     numberB = Convert.ToInt32(Console.ReadLine());
 }
 // Methods for raising the number A to a natural power of the number B.
-void Calculate()
+int Calculate(int numberA, int numberB)
 {
-    result = (int)Math.Pow(numberA, numberB);
-
+    return (int)Math.Pow(numberA, numberB);
 }
 
-void Calculate2()
+int Calculate2(int numberA, int numberB)
 {
     int result = 1;
     for (int i = 0; i < numberB; i++)
     {
         result = (result * numberA);
     }
-    
+    return result;
 }
 //Print method
-void Print()
+void Print(int calculate, int calculate2)
 {
-    Console.WriteLine("Ответ: " + result);
+    Console.WriteLine($"Ответ (через Math.Pow): {calculate}");
+    Console.WriteLine($"Ответ (через цикл for): {calculate2}");
 }
 
 Read();
-Calculate();
-Print();
-Calculate2();
-Print();
-
-
-
+Print(Calculate( numberA, numberB), Calculate2( numberA, numberB));
