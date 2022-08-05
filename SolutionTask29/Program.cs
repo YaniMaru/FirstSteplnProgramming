@@ -1,6 +1,7 @@
 ﻿/*---------------------------------------------------------------------------------- 
-  Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-* Ввести с клавиатуры длину массива и диапазон значений элементов 
+  Программа, которая задаёт массив из 8 элементов и выводит их на экран.
+* Ввести с клавиатуры длину массива и диапазон значений элементов
+ *Пограмма, которая из имен  выберает случайное имя и выводит в терминал
 ----------------------------------------------------------------------------------*/
 System.Random numberSintesator = new Random();
 //Option with an array of 8 elements
@@ -39,10 +40,21 @@ void VariantTwo()
             i++;
         }
         Console.Write(numberSintesator.Next(bottomLine, topLine + 1));
-        Console.Write("]");
+        Console.WriteLine("]");
     }
     CustomArray();
 }
 
+//Random choice of name
+void RandomChoiceOfName()
+{
+Console.Write("Введите имена через запятую: ");  
+string usernames = (Console.ReadLine() ?? "").Replace(" ", string.Empty);
+string[] name = usernames .Split(',');
+
+Console.Write($"В магазин идет: {name[numberSintesator.Next(0, name.Length)]}");
+}
+
 VariantOne();
 VariantTwo();
+RandomChoiceOfName();
