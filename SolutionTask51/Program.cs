@@ -28,7 +28,7 @@ int CalcDiagTwoDimArr(int[,] inputArray)
 {
     int outSumDiaganal = 0;
 
-    int i = 0; int j = 0;
+    int i = 0;
     while (i < inputArray.GetLength(0))
     {
         
