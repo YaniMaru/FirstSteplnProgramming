@@ -10,9 +10,9 @@
 
 int countRow = 4;
 int countColumn = 3;
-double[,] boofArray = FillTwoDimArray(countRow, countColumn);
-PrintTwoDimArray(boofArray);
-PrintResult(Count(Colculate(boofArray, countColumn), countRow));
+double[,] bufArray = FillTwoDimArray(countRow, countColumn);
+PrintTwoDimArray(bufArray);
+PrintResult(Count(Colculate(bufArray, countColumn), countRow));
 
 // метод для заполнения двумерного массива
 double[,] FillTwoDimArray(int countRow, int countColumn)
