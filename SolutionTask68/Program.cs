@@ -9,7 +9,7 @@ m = 2, n = 3 -> A(m,n) = 29
 Console.Clear();
 uint numberM = ReadData("Задайте положительное число M");
 uint numberN = ReadData("Задайте положительное число N");
-Console.WriteLine(AckermanFunction(numberN, numberM));
+Console.WriteLine($"A({numberM},{numberN}) = {AckermanFunction(numberN, numberM)}");
 //метод считывания данных
 uint ReadData(string line)
 {
